@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #242424;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: #1f1f1f;
+    color: #1becff;
+}
+
+.headcont {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 800;
+    font-size: 35px;
+    letter-spacing: 2;
+}
+
+.headcont img {
+    width: 70px;
+    margin: 5px 80px;
+}
+
+footer {
+    background-color: #1f1f1f;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    color: #1becff;
+    font-size: 15px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    justify-self: flex-end;
+}
+
+section {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* -------------------------------------------------------------- */
+
+.regbox {
+    display: flex;
+    width: 80%;
+    height: 80%;
+    background-color: #1f1f1f;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: flex-end;
+    color: white;
+    background: url(assets/bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.regtext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 36%;
+    background-color: #1f1f1f72;
+    height: 90%;
+    margin-right: 25px;
+    border-radius: 25px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 800;
+    font-size: 26px;
+    box-shadow: 0 0 50px #0606064a;
+}
+
+.welc {
+    font-size: 35px;
+}
+
+.regtext button {
+    width: 130px;
+    height: 50px;
+    border: solid 3px red;
+    background: none;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    font-size: 15px;
+    color: red;
+    margin-top: 20%;
+    transition: 0.1s;
+}
+
+.regtext button:hover {
+    border: none;
+    background-color: red;
+    color: #1f1f1f;
+}
+
+/* -------------------------------------------------------------- */
+
+#formbox {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 80%;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-image: linear-gradient(#1f1f1fdf,#1f1f1fa4), url('assets/bg.jpg');    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#registerForm {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: repeat(5, 1fr);
+    row-gap: 20px;
+    column-gap: 10px;
+    transition: 5s;
+}
+/* .hidden {
+    position: absolute;
+    left: -1000px;
+} */
+#registerForm label{
+    font-family: "Oswald", sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    color: #1becff;
+    align-self: center;
+}
+#registerForm input {
+    border: 2px solid red;
+    border-radius: 5px;
+    color: red;
+    background: none;
+    height: 40px;
+    align-self: center;
+    letter-spacing: 10;
+    padding: 0 10px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+    transition: 0.1s;
+}
+
+#registerForm input:focus {
+    border: none;
+    background-color: #1f1f1f;
+    color: #1becff;
+    font-weight: 800;
+}
+
+#submitbtn {
+    grid-column: 1/3;
+    width: 20%;
+    height: 40px;
+    justify-self: center;
+    border: solid 3px red;
+    background: none;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    font-size: 15px;
+    color: red;
+    transition: 0.1s;
+    margin-top: 3%;
+}
+#submitbtn:hover {
+    border: none;
+    background-color: red;
+    color: #1f1f1f;
+}
+.radio-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* -------------------------------------------------------------- */
+
+#formResults {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 80%;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-image: linear-gradient(#1f1f1fdf,#1f1f1fa4), url('assets/bg.jpg');    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#btn1 {
+    width: 30%;
+    min-width: 280px;
+    height: 20%;
+    background: none;
+    border-radius: 5px;
+    border: 3px solid #1becff;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 60px;
+    letter-spacing: 10;
+    color: #1becff;
+    transition: 0.1s;
+}
+
+#btn2 {
+    width: 30%;
+    min-width: 280px;
+    height: 10%;
+    background: none;
+    border-radius: 5px;
+    border: 3px solid red;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    color: red;
+    transition: 0.1s;
+}
+
+#btn3 {
+    width: 30%;
+    min-width: 280px;
+    height: 20%;
+    background: none;
+    border-radius: 5px;
+    border: 3px solid red;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    color: red;
+    transition: 0.1s;
+}
+
+#btn1:hover {
+    background-color: #1becff;
+    color: #1f1f1f;
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #1becff37;
+}
+#btn2:hover , #btn3:hover {
+    background-color: red;
+    color: #1f1f1f;
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #ff000037;
+}
+
+#btn4 {
+    width: 150px;
+    height: 50px;
+    background: none;
+    border-radius: 5px;
+    border: 3px solid #1becff;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    font-weight: 800;
+    color: #1becff;
+    margin-top: 30px;
+    transition: 0.1s;
+}
+
+#btn4:hover {
+    background-color: #1becff;
+    color: #1f1f1f;
+    border: none;
+}
