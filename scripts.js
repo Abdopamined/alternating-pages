@@ -70,7 +70,7 @@ function submitForm() {
 
     const btn3 = document.createElement('button');
     btn3.id = 'btn3';
-    btn3.textContent = 'You signed in with this email: ' + email;
+    btn3.textContent = 'You'+ "'" +'re signed in with this email: ' + email;
     formResults.appendChild(btn3);
     
     const btn4 = document.createElement('button');
