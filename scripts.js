@@ -78,11 +78,11 @@ function submitForm() {
     btn4.textContent = 'Confirm';
     formResults.appendChild(btn4);
 
-    document.getElementById('btn4').addEventListener('click', alert);    
+    document.getElementById('btn4').addEventListener('click', alertme);    
 }
 
-function alert() {
-    console.log("clicked");
-    window.alert("Hi");
+function alertme() {
+    console.log("Confirm clicked");
+    alert("Hi");
     window.location.reload();
 }
