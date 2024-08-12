@@ -83,6 +83,6 @@ function submitForm() {
 
 function alertme() {
     console.log("Confirm clicked");
-    alert("Hi");
+    alert("You've successfuly registered your new account.");
     window.location.reload();
 }
